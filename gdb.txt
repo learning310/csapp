@@ -1,0 +1,6 @@
+编译 1.s 为 1.o --gstabs 保留符号表，方便gdb调试
+as --gstabs -o 1.o 1.s
+链接 1.o 为 1 
+ld -o 1 1.o
+
+valgrind 比gprof更好用的剖析程序
